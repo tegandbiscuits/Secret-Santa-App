@@ -1,9 +1,5 @@
 // Generated on 2013-12-13 using generator-webapp 0.4.3
 'use strict';
-var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
-var mountFolder = function (connect, dir) {
-    return connect.static(require('path').resolve(dir));
-};
 
 // # Globbing
 // for performance reasons we're only matching one level down:
@@ -27,10 +23,6 @@ module.exports = function (grunt) {
             compass: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server', 'autoprefixer']
-            },
-            recess: {
-                files: ['<%= yeoman.app %>/styles/{,*/}*.less'],
-                tasks: 'recess reload'
             },
             styles: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
@@ -57,13 +49,11 @@ module.exports = function (grunt) {
             },
             livereload: {
                 options: {
-                    middleware: function (connect) {
-                        return [
-                            lrSnippet,
-                            mountFolder(connect, '.tmp'),
-                            mountFolder(connect, 'app')
-                        ];
-                    }
+                    open: true,
+                    base: [
+                        '.tmp',
+                        '<%= yeoman.app %>'
+                    ]
                 }
             },
             test: {
@@ -137,15 +127,6 @@ module.exports = function (grunt) {
             server: {
                 options: {
                     debugInfo: true
-                }
-            }
-        },
-        recess: {
-            dist: {
-                src: 'app/styles/main.less',
-                dest: 'app/styles/main.css',
-                options: {
-                    compile: true
                 }
             }
         },
