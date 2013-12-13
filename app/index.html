@@ -3,53 +3,65 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>secret_santa</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/bootstrap.css">
-        <link rel="stylesheet" href="styles/theme.css">
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>secret_santa</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
 
-        <div class="container">
-            <div class="hero-unit text-center">
-              <h1>Hello World</h1>
-              <p>Testing. 1. 2. 3.</p>
-                  <div class="form-group">
-                    <label class="sr-only" for="name">Name</label>
-                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="message">Message</label>
-                    <input type="text" class="form-control" id="messageInput" placeholder="Message...">
-                  </div>
-                  <button type="submit" id="fSubmit" class="btn btn-default">Submit</button>
-            </div>
-
-            <div class="page-header">
-                <h1>Output</h1>
-            </div>
-            <div id='messagesDiv' class="well"></div>
-
+    <div class="container">
+      <div class="hero-unit">
+        <h1>Hello World</h1>
+        <p>Testing. 1. 2. 3.</p>
+        <div class="form-vertical">
+          <div class="form-group">
+            <label for="nameInput">
+                Who are you?
+            </label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="giftInput1">
+                List two or three gift ideas you would like <span class="text-muted">(try to keep them under $15)</span>.
+            </label>
+            <input type="text" id="giftInput1" class="form-control" placeholder="Gift idea one">
+          </div>
+          <div class="form-group">
+            <input type="text" id="giftInput2" class="form-control" placeholder="Gift idea two">
+          </div>
+          <div class="form-group">
+            <input type="text" id="giftInput3" class="form-control" placeholder="Gift idea three">
+          </div>
+          <button type="submit" id="fSubmit" class="btn btn-default">Submit</button>
         </div>
+      </div>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+      <div class="page-header">
+          <h1>Output</h1>
+      </div>
+      <div id='messagesDiv' class="well"></div>
 
-        <script src="https://cdn.firebase.com/v0/firebase.js"></script>
-        <script src="scripts/main.js"></script>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
