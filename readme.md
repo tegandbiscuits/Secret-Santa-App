@@ -11,8 +11,6 @@
 
 **Notes about this project:** This is a [Dojo](http://codingdojo.org/cgi-bin/wiki.pl?WhatIsCodingDojo) challenge designed to hone your skills in app development. You may start this project using this default app -- designed to get developers moving quickly -- or build your own app from scratch.
 
-***
-
 # The Secret Santa Dojo Challenge
 
 **What's a Secret Santa?**
