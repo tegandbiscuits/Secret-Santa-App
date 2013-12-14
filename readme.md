@@ -9,7 +9,7 @@
 #### Build
 * Build the whole project: `grunt`
 
-**Notes about this project:** This is a [Dojo](http://codingdojo.org/cgi-bin/wiki.pl?WhatIsCodingDojo) challenge designed to hone your skills in app development. You may start this project using this default app -- designed to get developers moving quickly -- or build your own app from scratch.
+**Notes about this project:** This is a [Dojo](http://codingdojo.org/cgi-bin/wiki.pl?WhatIsCodingDojo) challenge designed to hone your skills in app development. You may start this project using this default app -- designed to get developers moving quickly -- or build your own app from scratch. This app was built using Yeoman, and FireBase. You will need to use your won FireBase account for it to work.
 
 # The Secret Santa Dojo Challenge
 
