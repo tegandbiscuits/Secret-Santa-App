@@ -1,4 +1,4 @@
-# Secret Santa App - A [dsmwebgeeks.com](http://dsmwebgeeks.com) Dojo
+# Secret Santa App - [dsmwebgeeks.com](http://dsmwebgeeks.com) Dojo
 
 ## Installation
 
