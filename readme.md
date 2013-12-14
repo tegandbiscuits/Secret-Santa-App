@@ -22,11 +22,11 @@ Secret Santa is a Christmas tradition in which members of a group or community a
 
 #### Optional
 * Gift giving is hard. It might be nice if participants could give some ideas on what gifts they would like to receive, and what their favorite gift of all-time was.
-* The ultimate Secret Santa app would automatically assigns Secret Santas and alerts each group member of their secret responsibilities.
+* The ultimate Secret Santa app would automatically assigns Secret Santas and alert each group member of their secret responsibilities.
 
 ### FYI:
-* You will need a database to store information
+* You may need a database to store information
 * The algorithm to assign Secret Santas needs to avoid duplicates
-* This would be awesome if it was a responsive design (bonus points for using Phone Gap)
+* It would be awesome if the app was a responsive design (bonus points for using Phone Gap)
 * At some point you'll probably want to set up a server to run your code
 * If the development side of this is too challenging, just make it look good
