@@ -94,6 +94,61 @@ html, body {
   }
 }
 
+
+//
+// TAG
+// --------------------------------------------------
+*,body {margin: 0;padding: 0;}
+
+.x-tag {
+  background: #6ABD9A;
+  padding: 50px 0;
+  position: relative;
+  z-index: 5;
+  .stripes-holder {
+    position: absolute;top: 25%;left: 0;width: 100%;
+    z-index: -1;
+    .stripe {
+      height: 12px;background: #FBE5C4;margin: 8px 0;
+    }
+  }
+  .tag-holder {position: relative;z-index: 1;
+    width:250px;
+    height: 200px;
+    margin: auto;
+  }
+  .tag {
+    background: #FDEECD;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0;left: 0;
+    .top, .bottom {position: absolute;width: 0px;height: 0px;border-style: solid;left: 0;}
+    .top {
+      top: -35px;
+      border-width: 0 150px 35px 150px;
+      border-color: transparent transparent #FDEECD transparent;
+    }
+    .bottom {
+      bottom: -35px;
+      border-width: 35px 150px 0 150px;
+      border-color: #FDEECD transparent transparent transparent;
+    }
+  }
+  .tag-dark {
+    background: #6ABD9A;
+    .top {border-color: transparent transparent #6ABD9A transparent;}
+    .bottom {border-color: #6ABD9A transparent transparent transparent;;}
+  }
+  .tag-xl {
+    width: 300px;
+    height: 200px;
+    top: 4px;left: 4px;
+  }
+}
+
+
 //
 // Event Details
 // --------------------------------------------------
