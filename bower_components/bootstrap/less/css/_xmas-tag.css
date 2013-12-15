@@ -1,0 +1,275 @@
+.masthead {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+.masthead .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/blizzard_winter_masthead.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -webkit-filter: blur(0.5px) sepia(0.3);
+  filter: blur(0.5px) sepia(0.3);
+}
+.site-logo {
+  color: #FFF;
+  text-align: center;
+  position: relative;
+}
+.site-logo h1,
+.site-logo h2,
+.site-logo h3 {
+  margin: 0;
+  line-height: 100%;
+}
+.site-logo h1 {
+  font-size: 72px;
+  line-height: 60px;
+  color: #EE4E42;
+  text-shadow: 0 1px 0 #FDEECD,
+                 0 3px 0 #824E2C;
+  font-family: 'Alex Brush', cursive;
+  text-align: left;
+  padding-left: 5px;
+  font-weight: bolder;
+  font-style: italic;
+  -moz-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  margin: 5px auto 10px;
+}
+.site-logo h1 span {
+  font-size: 92px;
+  padding-left: 65px;
+}
+.site-logo h2 {
+  color: #854D2B;
+  font-size: 30px;
+  text-shadow: 0 1px 0 #FDEECD,
+                 0 3px 0 #F29B81;
+  font-style: italic;
+}
+.site-logo h3 {
+  font-size: 18px;
+  font-style: italic;
+  color: #EE4E42;
+  text-transform: uppercase;
+}
+.x-tag {
+  background: #6ABD9A;
+  padding: 75px 0;
+  position: relative;
+  z-index: 5;
+}
+.x-tag .stripes-holder {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.x-tag .stripes-holder .stripe {
+  height: 12px;
+  background: #FBE5C4;
+  margin: 8px 0;
+}
+.x-tag .tag-holder {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+.x-tag .tag-holder:after {
+  content: "";
+  position: absolute;
+  top: -75px;
+  left: 150px;
+  height: 50px;
+  width: 1px;
+  background: #51736B;
+}
+.x-tag .tag {
+  background: #FDEECD;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.x-tag .tag .top,
+.x-tag .tag .bottom {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  left: 0;
+}
+.x-tag .tag .top {
+  top: -35px;
+  border-width: 0 150px 35px 150px;
+  border-color: transparent transparent #FDEECD transparent;
+}
+.x-tag .tag .bottom {
+  bottom: -35px;
+  border-width: 35px 150px 0 150px;
+  border-color: #FDEECD transparent transparent transparent;
+}
+.x-tag .tag-dark {
+  background: #6ABD9A;
+}
+.x-tag .tag-dark .top {
+  border-color: transparent transparent #6ABD9A transparent;
+}
+.x-tag .tag-dark .bottom {
+  border-color: #6ABD9A transparent transparent transparent;
+}
+.x-tag .tag-xl {
+  width: 306px;
+  height: 204px;
+  top: -2px;
+  left: -3px;
+}
+.x-tag .tag-xl .top {
+  top: -36px;
+  border-width: 0 153px 36px 153px;
+}
+.x-tag .tag-xl .bottom {
+  bottom: -36px;
+  border-width: 36px 153px 0 153px;
+}
+.x-tag .tag-xxl {
+  width: 310px;
+  height: 208px;
+  top: -4px;
+  left: -5px;
+}
+.x-tag .tag-xxl .top {
+  top: -36px;
+  border-width: 0 155px 36px 155px;
+}
+.x-tag .tag-xxl .bottom {
+  bottom: -36px;
+  border-width: 36px 155px 0 155px;
+}
+.x-tag .tag-xxxl {
+  width: 316px;
+  height: 212px;
+  top: -6px;
+  left: -8px;
+}
+.x-tag .tag-xxxl .top {
+  top: -37px;
+  border-width: 0 158px 37px 158px;
+}
+.x-tag .tag-xxxl .bottom {
+  bottom: -37px;
+  border-width: 37px 158px 0 158px;
+}
+.x-tag .tag-xxxxl {
+  width: 320px;
+  height: 216px;
+  top: -8px;
+  left: -10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.x-tag .tag-xxxxl .top {
+  top: -37px;
+  border-width: 0 160px 37px 160px;
+}
+.x-tag .tag-xxxxl .top .fancy {
+  position: absolute;
+  top: -17px;
+  left: -7px;
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #FDEECD;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.x-tag .tag-xxxxl .top .fancy:before,
+.x-tag .tag-xxxxl .top .fancy:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 0px;
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #FDEECD;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+.x-tag .tag-xxxxl .top .fancy:before {
+  -moz-transform: rotate(-80deg);
+  -webkit-transform: rotate(-80deg);
+  transform: rotate(-80deg);
+}
+.x-tag .tag-xxxxl .top .fancy:after {
+  left: -16px;
+  top: -2px;
+  -moz-transform: rotate(80deg);
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+.x-tag .tag-xxxxl .bottom {
+  bottom: -37px;
+  border-width: 37px 160px 0 160px;
+}
+.x-tag .tag-xxxxl .bottom .fancy {
+  position: absolute;
+  top: 0;
+  left: -7px;
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #FDEECD;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  -moz-transform: rotate(-319deg);
+  -webkit-transform: rotate(-319deg);
+  transform: rotate(-319deg);
+}
+.x-tag .tag-xxxxl .bottom .fancy:before,
+.x-tag .tag-xxxxl .bottom .fancy:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 0px;
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #FDEECD;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+.x-tag .tag-xxxxl .bottom .fancy:before {
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.x-tag .tag-xxxxl .bottom .fancy:after {
+  left: -16px;
+  top: -2px;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}

@@ -1,0 +1,249 @@
+//
+// MASTHEAD TAG
+// --------------------------------------------------
+.masthead {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+  // .bg {
+  //   position: absolute;
+  //   top: 0;left: 0;right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url(../images/blizzard_winter_masthead.jpg) no-repeat center center;
+  //   -webkit-background-size: cover;
+  //   -moz-background-size: cover;
+  //   background-size: cover;
+  //   -webkit-filter: blur(.5px) sepia(.3);
+  //   filter: blur(.5px) sepia(.3);
+  // }
+}
+.site-logo {
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  h1,h2,h3 {
+    margin: 0;
+    line-height: 100%;
+  }
+  h1 {
+    font-size: 72px;
+    line-height: 60px;
+    color: #EE4E42;
+    text-shadow: 0 1px 0 #FDEECD,
+                 0 3px 0 #824E2C;
+    font-family: 'Alex Brush', cursive;
+    text-align: left;
+    padding-left: 5px;
+    font-weight: bolder;
+    font-style: italic;
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    margin: 5px auto 10px;
+    span {font-size: 92px;padding-left: 65px;}
+  }
+  h2 {
+    color: #854D2B;
+    font-size: 30px;
+    text-shadow: 0 1px 0 #FDEECD,
+                 0 3px 0 #F29B81;
+    font-style: italic;
+  }
+  h3 {
+    font-size: 18px;
+    font-style: italic;
+    color: #EE4E42;
+    text-transform: uppercase;
+  }
+}
+
+.x-tag {
+  background: #6ABD9A;
+  padding: 75px 0;
+  position: relative;
+  z-index: 5;
+  .stripes-holder {
+    position: absolute;top: 25%;left: 0;width: 100%;
+    z-index: -1;
+    .stripe {
+      height: 12px;background: #FBE5C4;margin: 8px 0;
+    }
+  }
+  .tag-holder {position: relative;z-index: 1;
+    width:300px;
+    height: 200px;
+    margin: auto;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -75px;
+      left: 150px;
+      height: 50px;
+      width: 1px;
+      background: #51736B;
+    }
+  }
+  .tag {
+    background: #FDEECD;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0;left: 0;
+    .top, .bottom {position: absolute;width: 0px;height: 0px;border-style: solid;left: 0;}
+    .top {
+      top: -35px;
+      border-width: 0 150px 35px 150px;
+      border-color: transparent transparent #FDEECD transparent;
+    }
+    .bottom {
+      bottom: -35px;
+      border-width: 35px 150px 0 150px;
+      border-color: #FDEECD transparent transparent transparent;
+    }
+  }
+  .tag-dark {
+    background: #6ABD9A;
+    .top {border-color: transparent transparent #6ABD9A transparent;}
+    .bottom {border-color: #6ABD9A transparent transparent transparent;;}
+  }
+  .tag-xl {
+    width: 306px;
+    height: 204px;
+    top: -2px;
+    left: -3px;
+    .top {
+      top: -36px;
+      border-width: 0 153px 36px 153px;
+    }
+    .bottom {
+      bottom: -36px;
+      border-width: 36px 153px 0 153px;
+    }
+  }
+  .tag-xxl {
+      width: 310px;
+      height: 208px;
+      top: -4px;
+      left: -5px;
+    .top {
+      top: -36px;
+      border-width: 0 155px 36px 155px;
+    }
+    .bottom {
+      bottom: -36px;
+      border-width: 36px 155px 0 155px;
+    }
+  }
+  .tag-xxxl {
+    width: 316px;
+    height: 212px;
+    top: -6px;
+    left: -8px;
+    .top {
+      top: -37px;
+      border-width: 0 158px 37px 158px;
+    }
+    .bottom {
+      bottom: -37px;
+      border-width: 37px 158px 0 158px;
+    }
+  }
+  .tag-xxxxl {
+    width: 320px;
+    height: 216px;
+    top: -8px;
+    left: -10px;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    .top {
+      top: -37px;
+      border-width: 0 160px 37px 160px;
+      .fancy {
+        position: absolute;
+        top: -17px;
+        left: -7px;
+        margin: 0 auto;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #FDEECD;
+        border-top-right-radius: 70px;
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        -moz-transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        &:before,&:after {
+          content: "";display: block;
+          position: absolute;
+          top: -16px;
+          left: 0px;
+          margin: 0 auto;
+          width: 15px;
+          height: 15px;
+          border: 2px solid #FDEECD;
+          border-top-right-radius: 70px;
+          border-bottom-left-radius: 70px;
+          border-bottom-right-radius: 70px;
+        }
+        &:before {
+          -moz-transform: rotate(-80deg);
+          -webkit-transform: rotate(-80deg);
+          transform: rotate(-80deg);
+        }
+        &:after {
+          left: -16px;
+          top: -2px;
+          -moz-transform: rotate(80deg);
+          -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+        }
+      }
+    }
+    .bottom {
+      bottom: -37px;
+      border-width: 37px 160px 0 160px;
+      .fancy {
+        position: absolute;
+        top: 0;
+        left: -7px;
+        margin: 0 auto;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #FDEECD;
+        border-top-right-radius: 70px;
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        -moz-transform: rotate(-319deg);
+        -webkit-transform: rotate(-319deg);
+        transform: rotate(-319deg);
+        &:before,&:after {
+          content: "";display: block;
+          position: absolute;
+          top: -16px;
+          left: 0px;
+          margin: 0 auto;
+          width: 15px;
+          height: 15px;
+          border: 2px solid #FDEECD;
+          border-top-right-radius: 70px;
+          border-bottom-left-radius: 70px;
+          border-bottom-right-radius: 70px;
+        }
+        &:before {
+          -moz-transform: rotate(-90deg);
+          -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+        }
+        &:after {
+          left: -16px;
+          top: -2px;
+          -moz-transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
