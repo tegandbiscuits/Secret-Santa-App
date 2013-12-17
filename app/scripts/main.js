@@ -10,16 +10,16 @@ $('#cSubmit').on('click', function (e) {
   var date = $('#date').val();
   var maxAmount = $('#max-amount').val();
   var edescription = $('#edescription').val();
-  messagesRef = new Firebase(fbName+oname); 
-  messagesRef.push({name:name, email:email, ename:ename, date:date, maxAmount:maxAmount, edescription:edescription});
+  messagesRef = new Firebase(fbName+oname+"/details");
+  messagesRef.set({name:name, email:email, ename:ename, date:date, maxAmount:maxAmount, edescription:edescription});
 
   // When the user presses enter on the message input, write the message to firebase.
   $('#fSubmit').on('click',function (e) {
       'use strict';
       var name = $('#nameInput').val();
 
-      messagesRef = new Firebase(fbName+oname+"/"+name);
-      messagesRef.push({name:name});
+      messagesRef = new Firebase(fbName+oname+"/users/"+name);
+      messagesRef.set({name:name});
 
   });
 
