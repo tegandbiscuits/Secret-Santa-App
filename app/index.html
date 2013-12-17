@@ -71,37 +71,37 @@
             <div class="row">
               <div class="form-group col-xs-12 col-sm-7 col-md-6">
                 <label for="ename" class="control-label">Organizer Name</label>
-                <input type="text" class="form-control" name="oname" placeholder="Event Name">
+                <input type="text" class="form-control" name="oname" id="oname" placeholder="Event Name">
               </div>
               <div class="form-group col-xs-12 col-sm-5 col-md-6">
                 <label for="email" class="control-label">Email</label>
-                <input type="email" class="form-control" name="email" placeholder="Email">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
               </div>
             </div>
             <div class="form-group">
               <label for="ename" class="control-label">Name Your Event</label>
-              <input type="text" class="form-control" name="ename" placeholder="Event Name">
+              <input type="text" class="form-control" name="ename" id="ename" placeholder="Event Name">
             </div>
             <div class="row">
               <div class="form-group col-xs-12 col-sm-7 col-md-6">
                 <label for="date" class="control-label">Date</label>
-                <input type="text" class="form-control" name="date" placeholder="Event Name">
+                <input type="text" class="form-control" name="date" id="date" placeholder="Event Name">
               </div>
               <div class="form-group col-xs-12 col-sm-5 col-md-6">
                 <label for="max-amount" class="control-label">Price Cap</label>
                 <div class="input-group">
                   <span class="input-group-addon">$</span>
-                  <input type="text" class="form-control" name="max-amount" placeholder="Price Cap">
+                  <input type="text" class="form-control" name="max-amount" id="max-amount" placeholder="Price Cap">
                   <span class="input-group-addon">.00</span>
                 </div>
               </div>
             </div>
             <div class="form-group">
               <label for="edescription" class="control-label">Event Description</label>
-              <textarea class="form-control" rows="3" name="edescription"></textarea>
+              <textarea class="form-control" rows="3" name="edescription" id="edescription"></textarea>
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-default">Create Event</button>
+              <button type="submit" id="cSubmit" class="btn btn-default">Create Event</button>
             </div>
           </form>
         </div>
@@ -119,7 +119,7 @@
               </label>
               <input type="text" class="form-control" id="nameInput" placeholder="Name">
             </div>
-            <div class="form-group">
+            <!-- div class="form-group">
               <label for="giftInput1">
                   List two or three gift ideas you would like <span class="text-muted">(try to keep them under $15)</span>.
               </label>
@@ -130,7 +130,7 @@
             </div>
             <div class="form-group">
               <input type="text" id="giftInput3" class="form-control" placeholder="Gift idea three">
-            </div>
+            </div -->
             <button type="submit" id="fSubmit" class="btn btn-default">Submit</button>
           </div>
         </div>
